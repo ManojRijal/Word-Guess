@@ -1,0 +1,44 @@
+body,ul,li,div,p,span,h1,h2,h3,h4,h5,h6,i,a{
+margin: 0;padding:0;
+}
+.main{
+margin: 0 auto;
+width: 1000px;
+}
+.red{
+background-color: red;
+}
+.yellow{
+background-color: yellow;
+}
+
+.mydiv{
+width:100px;
+height:100px;
+background-color: yellow;
+}
+.mynav{
+background-color: aquamarine!important;
+}
+.hero-text{
+margin: 150;
+padding: 20px;
+}
+
+.product-item{
+padding: 20px;
+
+}
+.product-item img{
+height: 300px;
+border: 1px solid gray;
+
+
+}
+.footer{
+margin: 150;
+background-color: aquamarine;
+padding :20px
+
+
+}
