@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Bootstrap CSS from a CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Login</title>
+</head>
+<body>
+<div class="container mt-5">
+    <h2>Login</h2>
+    <!-- Add 'was-validated' class to form for validation feedback -->
+    <form action="/login" method="post" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <!-- Add form-control class to input -->
+            <input type="text" id="email" name="email" class="form-control" required>
+            <div class="invalid-feedback">
+                Please enter your email.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <!-- Add form-control class to input -->
+            <input type="password" id="password" name="password" class="form-control" required>
+            <div class="invalid-feedback">
+                Please enter your password.
+            </div>
+        </div>
+        <!-- Add btn and btn-primary classes to button -->
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <p th:text="${error}" style="color: red"></p>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>

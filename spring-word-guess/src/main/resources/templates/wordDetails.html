@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Word Details</title>
+</head>
+<style th:inline="text">
+    /* Apply the background image style to the whole body */
+    body, html {
+        height: 100%;
+        margin: 0;
+        background-image: url('/background.jpeg'); /* Thymeleaf will process this */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<body>
+<h2>Word Details</h2>
+<p>Word: <span th:text="${word.word}"></span></p>
+<p>Hints: <span th:text="${word.hints}"></span></p>
+<p>Level: <span th:text="${word.level}"></span></p>
+</body>
+</html>
